@@ -1,0 +1,15 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.listContainer {
+  margin-top: 20px;
+}
+
+.load,
+.failed {
+  font-size: 55px;
+  text-align: center;
+  margin-top: 15%; 
+}

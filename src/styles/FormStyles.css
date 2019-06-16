@@ -1,0 +1,49 @@
+.filterForm {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.item {
+  padding: 10px 0;
+  /* border: 1px solid red; */
+}
+.item:first-child {
+  width: 100%;
+}
+.inputSeach {
+  width: 98%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.inputAge {
+  padding: 8px;
+  margin: 0 10px;
+  font-size: 14px;
+  width: 40px;
+  text-align: center;
+}
+.inputSex {
+  display: none;
+}
+
+.inputSex + label {
+  cursor: pointer;
+  margin-right: 10px; 
+  color: #7E7878;
+}
+.inputSex + label:not(:last-child)::after {
+  content: " /";
+}
+
+.inputSex:checked + label {
+  color: #000000;
+}
+.inputWork {
+  padding: 8px;
+  font-size: 14px;
+  width: 250px;
+  margin-left: 10px; 
+}

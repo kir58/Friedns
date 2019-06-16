@@ -1,0 +1,52 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.listContainer {
+  margin-top: 20px;
+}
+.list {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+}
+.item {
+  width: 33%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+}
+.icon {
+  display: inline-block;
+  padding: 17px;
+  border: 1px solid #DDDDDD;
+  width: 25px;
+  height: 20px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #DDDDDD;
+  margin-right: 20px;
+}
+.name {
+  text-decoration: underline;
+  padding-bottom: 3px;
+  font-size: 18px;
+}
+
+.inform {
+  font-size: 16px;
+  width: 70%;
+  color: #A59C9C;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: inherit;
+  align-items: inherit;
+}

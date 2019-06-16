@@ -1,0 +1,34 @@
+.container {
+  margin-top: 40px;
+  padding-bottom: 50px; 
+}
+.list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.item {
+  margin: 5px;
+}
+
+.itemButton {
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 1px solid #000000;
+  text-decoration: none;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.active {
+  background-color: rgb(167, 160, 160);
+  border-color: #DDDDDD;
+  color: white;
+}

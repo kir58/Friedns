@@ -1,0 +1,66 @@
+.container {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  height: 70px;
+  background-color: #DDDDDD;
+}
+.title {
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  margin-top: 20px;
+}
+
+.element {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  border: 1px solid   #A59C9C;
+  justify-content: center;
+  width: 20%
+}
+.element:last-child {
+  padding-left: 20px;
+  width: 75%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px;
+  width: 86%;
+  height: 290px;
+  font-size: 50px;
+  background-color:  #DDDDDD;
+  text-align: center;
+}
+.name {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0px;
+  border-top: 1px solid  #A59C9C;
+}
+.item {
+  margin:10px;
+}
+.info {
+  border-top: 1px solid  #A59C9C;
+}
+.description {
+  margin-left: 2px;
+  color: #A59C9C; 
+}

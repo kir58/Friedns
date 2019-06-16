@@ -1,0 +1,16 @@
+.DS_Store
+.idea/
+.vscode/
+
+node_modules/
+
+!public/img
+public/
+
+test/
+
+*.temp
+**/.directory
+**/*.log
+
+.env
