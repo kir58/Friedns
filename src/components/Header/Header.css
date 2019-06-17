@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  margin-top: 30px;
+  justify-content: flex-end;
+  height: 70px;
+  background-color:  #DDDDDD;
+  align-items: center;
+}
+
+.picture {
+  display: block;
+  margin: 10px auto;
+  height: 30px;
+}

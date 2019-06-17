@@ -43,15 +43,11 @@ class Friends extends React.Component {
       return <div className={styles.failed}>Please, reload page!</div>;
     }
     return (
-      <div className={styles.container}>
-        <div className={styles.listContainer} ref={this.top}>
-          <NewFriendsForm />
-          <h2>Friends</h2>
-          <RenderFriends friends={friends} />
-          {friends.length < pageSize && currentPage === 0 ? null : (
-            <Pagination />
-          )}
-        </div>
+      <div className={styles.listContainer} ref={this.top}>
+        <NewFriendsForm />
+        <h2>Friends</h2>
+        <RenderFriends friends={friends} />
+        {friends.length < pageSize && currentPage === 0 ? null : <Pagination />}
       </div>
     );
   }
