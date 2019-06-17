@@ -2,8 +2,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import styles from "../styles/Friends.css";
-import { getInitials } from "../utils.js";
+import styles from "./RenderFirends.css";
+import { getInitials } from "../../utils";
 
 const RenderFriends = ({ friends }) => {
   if (friends.length === 0) {

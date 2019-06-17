@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import styles from "../styles/Friend.css";
-import { getInitials, randomSlice } from "../utils";
-import RenderFriends from "./RenderFirends";
+import styles from "./Friend.css";
+import { getInitials, randomSlice } from "../../utils";
+import RenderFriends from "../RenderFriends/RenderFirends";
 
 const USER_FRIENDS_SIZE = 15;
 

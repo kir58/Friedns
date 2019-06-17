@@ -7,7 +7,7 @@ import thunk from "redux-thunk";
 import { createStore, applyMiddleware, compose } from "redux";
 import invariant from "redux-immutable-state-invariant";
 import reducers from "./reducers";
-import App from "./components/App";
+import App from "./components/App/App";
 import { fetchFriends } from "./actions";
 
 /* eslint-disable no-underscore-dangle */

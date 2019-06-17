@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 import cn from "classnames";
 import PropTypes from "prop-types";
 import _ from "lodash";
-import styles from "../styles/Pagination.css";
-import * as actions from "../actions";
-import { getLengthFiltredArr, getPaginationNav } from "../selectors";
+import styles from "./Pagination.css";
+import * as actions from "../../actions";
+import { getLengthFiltredArr, getPaginationNav } from "../../selectors";
 
 const mapStateToProps = state => ({
   currentPage: state.friends.currentPage,

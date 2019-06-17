@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/label-has-for */
 import React from "react";
 import { Field, reduxForm } from "redux-form";
-import styles from "../styles/FormStyles.css";
+import styles from "./NewFriendsForm.css";
 
 const lessThan = max => (value, previousValue, allValues) =>
   parseFloat(value) < parseFloat(allValues[max]) ? value : previousValue;

@@ -2,12 +2,12 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { connect } from "react-redux";
-import styles from "../styles/Filter.css";
-import { PaginataionSelector } from "../selectors";
+import styles from "./Filter.css";
+import { PaginataionSelector } from "../../selectors";
 // eslint-disable-next-line import/extensions
-import Pagination from "./Pagination.jsx";
-import NewFriendsForm from "./NewFriendsForm";
-import RenderFriends from "./RenderFirends";
+import Pagination from "../Pagination/Pagination";
+import NewFriendsForm from "../NewFriendsForm/NewFriendsForm";
+import RenderFriends from "../RenderFriends/RenderFirends";
 
 const mapStateToProps = state => ({
   friends: PaginataionSelector(state),
