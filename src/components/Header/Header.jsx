@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import styles from "./Header.css";
+import Logo from "../../assets/logo.png";
 
 export default () => {
   return (
     <div className={styles.header}>
-      <img
-        className={styles.picture}
-        alt=""
-        src="https://library.kissclipart.com/20180829/ale/kissclipart-house-icon-clipart-computer-icons-clip-art-1ca007c706960d7d.jpg"
-      />
+      <Link to="/">
+        <div className={styles.logo}>
+          <img className={styles.picture} alt="" src={Logo} />
+        </div>
+      </Link>
     </div>
   );
 };

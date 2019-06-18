@@ -3,6 +3,7 @@ import { HashRouter as Router, Route } from "react-router-dom";
 import Filter from "../Filter/Filter";
 import Friend from "../Friend/Friend";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import styles from "./App.css";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
         <Header />
         <Route path="/" exact component={Filter} />
         <Route path="/:id" component={Friend} />
+        <Footer />
       </Router>
     </div>
   );
