@@ -86,6 +86,7 @@ class NewFriendsForm extends React.Component {
             type="text"
             required
             component="input"
+            placeholder="work for"
           />
         </div>
       </form>

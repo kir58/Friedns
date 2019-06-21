@@ -7,15 +7,16 @@
 }
 .item {
   padding: 10px 0;
-  /* border: 1px solid red; */
 }
 .item:first-child {
   width: 100%;
 }
 .inputSeach {
-  width: 98%;
+  width: 100%;
+  box-sizing: border-box;
   padding: 10px;
   font-size: 16px;
+  border: 1px solid #7E7878;
 }
 
 .inputAge {
@@ -24,6 +25,7 @@
   font-size: 14px;
   width: 40px;
   text-align: center;
+  border: 1px solid #7E7878;
 }
 .inputSex {
   display: none;
@@ -46,4 +48,24 @@
   font-size: 14px;
   width: 250px;
   margin-left: 10px; 
+  border: 1px solid #7E7878;
+}
+
+.inputWork::placeholder {
+  font-size: 0;
+}
+
+@media screen and (max-width: 460px) {
+  .filterForm {
+    justify-content: center;
+  }
+  
+  .inputWork::placeholder {
+    font-size: 14px;
+    color: #000000;
+  }
+
+  .item:last-child > label {
+    display: none;
+  }
 }
