@@ -5,6 +5,7 @@ import styles from "./Friend.css";
 import { getInitials, randomSlice } from "../../utils";
 import RenderFriends from "../RenderFriends/RenderFirends";
 import Footer from "../Footer/Footer";
+import Loader from "../Loader/Loader";
 
 const USER_FRIENDS_SIZE = 15;
 
@@ -19,6 +20,9 @@ const renderList = (ids = [], usersObj, size) => {
 const Friend = ({ byId, match }) => {
   const { id } = match.params;
   const { age, company, email, gender, name, friends } = byId[id] || {};
+  if (Object.keys(byId).length === 0) {
+    return <Loader />;
+  }
   return (
     <div className={styles.container}>
       <div className={styles.header}>
