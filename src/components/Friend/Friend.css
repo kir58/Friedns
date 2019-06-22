@@ -101,7 +101,7 @@
     width: 33%;
   }
   .name {
-    order: 2;
+    display: none;
   }
   .info {
     width: 33%;
