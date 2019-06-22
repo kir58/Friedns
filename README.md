@@ -1,6 +1,6 @@
 # Friedns(mini social network)
 
-#### [Demo](https://kir58.github.io/Friedns/)
+### [Demo](https://kir58.github.io/Friedns/)
 
 ## Технологии
 - React, React-Router-Dom, React-Redux
