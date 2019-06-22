@@ -36,7 +36,7 @@
 }
 @media screen and (max-width: 460px) {
   .item {
-    margin: 3px;
+    margin: 2px;
   }
 
   .item:first-child,
@@ -44,7 +44,7 @@
     display: none;
   }
   .itemButton {
-    padding: 6px 12px;
+    padding: 5px 10px;
 
   }
 }
