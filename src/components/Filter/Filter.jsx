@@ -8,6 +8,7 @@ import { PaginataionSelector } from "../../selectors";
 import Pagination from "../Pagination/Pagination";
 import NewFriendsForm from "../NewFriendsForm/NewFriendsForm";
 import RenderFriends from "../RenderFriends/RenderFirends";
+import Footer from "../Footer/Footer";
 
 const mapStateToProps = state => ({
   friends: PaginataionSelector(state),
@@ -36,18 +37,26 @@ class Friends extends React.Component {
   render() {
     const { friends, friendsFetchingState, pageSize, currentPage } = this.props;
     if (friendsFetchingState === "requested") {
-      return <div className={styles.load}>Please, wait for few moments...</div>;
+      return (
+        <div className={styles.wrapper}>
+          <div className={styles.loader} />
+        </div>
+      );
     }
 
     if (friendsFetchingState === "failed") {
-      return <div className={styles.failed}>Please, reload page!</div>;
+      return (
+        <div className={styles.wrapper}>
+          <div className={styles.failed}>Please, reload page!</div>
+        </div>
+      );
     }
     return (
       <div className={styles.listContainer} ref={this.top}>
         <NewFriendsForm />
-        <h2>Friends</h2>
         <RenderFriends friends={friends} />
         {friends.length < pageSize && currentPage === 0 ? null : <Pagination />}
+        <Footer />
       </div>
     );
   }

@@ -10,21 +10,24 @@ const RenderFriends = ({ friends }) => {
     return null;
   }
   return (
-    <ul className={styles.list}>
-      {friends.map(({ id, age, name, gender, company }) => (
-        <li key={id} className={styles.item}>
-          <Link to={`/${id}`} key={id} className={styles.link}>
-            <div className={styles.icon}>{getInitials(name)}</div>
-            <div className={styles.text}>
-              <div className={styles.name}>{name}</div>
-              <div className={styles.inform}>
-                {`${gender}, ${age} y. o. works for ${company}`}
+    <div className={styles.listContainer}>
+      <h2 className={styles.title}>Friends</h2>
+      <ul className={styles.list}>
+        {friends.map(({ id, age, name, gender, company }) => (
+          <li key={id} className={styles.item}>
+            <Link to={`/${id}`} key={id} className={styles.link}>
+              <div className={styles.icon}>{getInitials(name)}</div>
+              <div className={styles.text}>
+                <div className={styles.name}>{name}</div>
+                <div className={styles.inform}>
+                  {`${gender}, ${age} y. o. works for ${company}`}
+                </div>
               </div>
-            </div>
-          </Link>
-        </li>
-      ))}
-    </ul>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 RenderFriends.propTypes = {

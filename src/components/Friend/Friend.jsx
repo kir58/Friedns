@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import styles from "./Friend.css";
 import { getInitials, randomSlice } from "../../utils";
 import RenderFriends from "../RenderFriends/RenderFirends";
+import Footer from "../Footer/Footer";
 
 const USER_FRIENDS_SIZE = 15;
 
@@ -49,10 +50,10 @@ const Friend = ({ byId, match }) => {
           </div>
         </div>
         <div className={styles.element}>
-          <h3>Friends</h3>
           {renderList(friends, byId, USER_FRIENDS_SIZE)}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
