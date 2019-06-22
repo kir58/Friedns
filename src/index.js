@@ -11,15 +11,15 @@ import App from "./components/App/App";
 import { fetchFriends } from "./actions";
 
 /* eslint-disable no-underscore-dangle */
-const ext = window.__REDUX_DEVTOOLS_EXTENSION__;
-const devtoolMiddleware = ext && ext();
+// const ext = window.__REDUX_DEVTOOLS_EXTENSION__;
+// const devtoolMiddleware = ext && ext();
 /* eslint-enable */
 
 const store = createStore(
   reducers,
   compose(
-    applyMiddleware(invariant(), thunk),
-    devtoolMiddleware
+    applyMiddleware(invariant(), thunk)
+    // devtoolMiddleware
   )
 );
 

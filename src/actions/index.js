@@ -1,4 +1,5 @@
 import { createAction } from "redux-actions";
+import axios from "axios";
 
 export const fetchFriendsRequest = createAction("FRIENDS_FETCH_REQUEST");
 export const fetchFriendsSuccess = createAction("FRIENDS_FETCH_SUCCESS");
@@ -10,9 +11,9 @@ export const fetchFriends = () => async dispatch => {
   dispatch(fetchFriendsRequest());
   try {
     const url = "https://api.myjson.com/bins/11hi3x";
-    const response = await fetch(url);
-    const json = await response.json();
-    dispatch(fetchFriendsSuccess({ friends: json }));
+    const request = await axios.get(url);
+    const { data } = request;
+    dispatch(fetchFriendsSuccess({ friends: data }));
   } catch (e) {
     dispatch(fetchFriendsFailure());
   }

@@ -45,11 +45,7 @@ class Friends extends React.Component {
     }
 
     if (friendsFetchingState === "failed") {
-      return (
-        <div className={styles.wrapper}>
-          <div className={styles.failed}>Please, reload page!</div>
-        </div>
-      );
+      return <div className={styles.failed}>Please, reload page!</div>;
     }
     return (
       <div className={styles.listContainer} ref={this.top}>

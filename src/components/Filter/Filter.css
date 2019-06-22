@@ -49,7 +49,8 @@
 }
 @media screen and (max-width: 480px) {
   .failed {
-    font-size: 35px;
+    font-size: 30px;
+    margin-top: 35%; 
   }
   .wrapper {
     left: 40%;
