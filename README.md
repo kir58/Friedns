@@ -1,5 +1,9 @@
 # Friedns(mini social network)
 
+``` 
+[Demo](https://kir58.github.io/Friedns/)
+```
+
 ## Технологии
 - React, React-Router-Dom, React-Redux
 - Redux, Redux-Thunk, Redux-Form, Redux-Actions
@@ -8,4 +12,4 @@
 - Axios, Lodash
 - HTML5, CSS3
 
-[Demo](http://kir58.github.io/Friends)
+[Demo](https://kir58.github.io/Friedns/)
