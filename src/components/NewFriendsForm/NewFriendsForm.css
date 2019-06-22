@@ -55,14 +55,14 @@
   font-size: 0;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
   .filterForm {
     justify-content: center;
   }
   
   .inputWork::placeholder {
     font-size: 14px;
-    color: #000000;
+    color: #7E7878;
   }
 
   .item:last-child > label {

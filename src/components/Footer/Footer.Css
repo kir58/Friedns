@@ -8,3 +8,9 @@
 .information {
   padding: 10px;
 }
+@media screen and (max-width: 460px) {
+  .wrapper {
+    margin-top: 0;
+    border-top: none;
+  }
+}

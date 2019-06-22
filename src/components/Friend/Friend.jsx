@@ -25,7 +25,9 @@ const Friend = ({ byId, match }) => {
       </div>
       <div className={styles.main}>
         <div className={styles.element}>
-          <div className={styles.icon}>{name && getInitials(name)}</div>
+          <div className={styles.icon}>
+            <div className={styles.picture}>{name && getInitials(name)}</div>
+          </div>
           <div className={styles.name}>{name}</div>
           <div className={styles.info}>
             <div className={styles.item}>
