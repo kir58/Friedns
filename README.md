@@ -6,6 +6,6 @@
 - React, React-Router-Dom, React-Redux
 - Redux, Redux-Thunk, Redux-Form, Redux-Actions
 - Reselect, Prop-Types, 
-- Webpack, Git, GitHub
+- Webpack, Git, GitHub, ESLint
 - Axios, Lodash
 - HTML5, CSS3
